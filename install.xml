@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<plugin name="current_weather">
+	<title>Current weather</title>
+	<summary>Displays weather on the Front End.</summary>
+	<author>Intelliants LLC</author>
+	<contributor>Intelliants LLC</contributor>
+	<version>3.1.0</version>
+	<date>2014-07-25</date>
+	<compatibility>3.1.2</compatibility>
+	<status>active</status>
+
+	<configgroup name="current_weather">Current Weather</configgroup>
+
+	<config group="current_weather" name="current_weather_divider" type="divider" description="Current weather" private="1">Settings</config>
+	<config group="current_weather" name="current_weather_city" type="text" description="City" length="255" private="1">Moscow</config>
+	<config group="current_weather" name="current_weather_unit" values="Celsius,Fahrenheit" type="select" description="Temperature unit">Celsius</config>
+	<config group="current_weather" name="current_weather_round" type="radio" description="Round" values="1,0" value="1" private="0">1</config>
+
+	<blocks>
+		<block name="current_weather" title="Weather" position="left" type="smarty" sticky="0" pages="index" filename="plugin:current_weather:block.weather.tpl" classname="box-clear"><![CDATA[]]></block>
+	</blocks>
+
+	<hooks>
+		<hook name="phpCoreBeforePageDisplay" page_type="front" filename="plugins/current_weather/includes/hook.weather.php"><![CDATA[]]></hook>
+	</hooks>
+</plugin>

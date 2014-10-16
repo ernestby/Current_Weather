@@ -1,0 +1,29 @@
+@import url(http://fonts.googleapis.com/css?family=Noto+Sans:400,700&subset=latin,cyrillic);
+
+.b-weather__temp {
+	font-family: 'Noto Sans', sans-serif;
+}
+
+.b-weather__temp img {
+	float: left;
+	width: 40px;
+	opacity: .5;
+	margin-right: 5px;
+}
+
+.b-weather__temp h4 {
+	margin: 0 0 0 48px;
+	font-size: 42px;
+	line-height: 42px;
+	color: #355c82;
+}
+
+.b-weather__info {
+	color: #999;
+	margin-left: 48px;
+}
+
+.b-weather__info small {
+	color: #aaa;
+	font-style: italic;	
+}
